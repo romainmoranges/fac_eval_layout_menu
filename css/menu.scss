@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $vert;
+
+    h1 {
+        width: 80%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .burger {
+        width: 10%;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+
+        ul {
+            list-style-type: none;
+            width: 100%;
+
+            li {
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    width: 100%;
+                    display: block;
+                    padding: 5px 0;
+
+                    &:hover {
+                        background: darken($vert, 20%);
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 767px) {
+
+    body {
+        width: 767px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1279px) {
+
+    body {
+        width: 1279px;
+        margin: auto;
+
+        header {
+            h1 {
+                width: 49%;
+                padding: 30px 0;
+            }
+
+            .burger {
+                display: none;
+            }
+
+            nav {
+                width: 49%;
+
+                ul {
+                    display: flex;
+                    li{
+                        width:33%;
+                    }
+                }
+            }
+        }
+    }
+
+}

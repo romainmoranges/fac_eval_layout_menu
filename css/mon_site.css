@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, a {
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #b8e994;
+}
+
+header h1 {
+  width: 80%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header .burger {
+  width: 10%;
+}
+
+header nav {
+  text-align: center;
+  width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+header nav ul li {
+  width: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+}
+
+header nav ul li a:hover {
+  background: #80d83f;
+}
+
+@media only screen and (min-width: 767px) {
+  body {
+    width: 767px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  body {
+    width: 1279px;
+    margin: auto;
+  }
+  body header h1 {
+    width: 49%;
+    padding: 30px 0;
+  }
+  body header .burger {
+    display: none;
+  }
+  body header nav {
+    width: 49%;
+  }
+  body header nav ul {
+    display: flex;
+  }
+  body header nav ul li {
+    width: 33%;
+  }
+}
+
+main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  color: #FFF;
+  margin: 25% 0;
+}
+
+/*# sourceMappingURL=mon_site.css.map */
